@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soutěž</title>
+</head>
+<body>
+    <header>
+        <h1>Aktuální soutěž: <span id="soutezText">League of Legends 5€</span></h1>
+    </header>
+    <main>
+        <section id="idSection">
+            <h2>Zkopíruj id pro kontrolu:</h2>
+            <h3 id="idText"></h3>
+            <button id="getCode">Získat ID</button>
+        </section>
+        <section id="codeSection">
+            <h2>Zadejte kód pro vyplnění 5 otázek:</h2>
+            <input type="text" id="codeInput">
+            <button id="submitCode">Odeslat kód</button>
+        </section>
+        <section class="question">
+            <h2>Otázka 1:</h2>
+            <p>Jak se jmenuji?</p>
+            <input type="radio" id="answer1A" name="answer1" value="false">
+            <label for="answer1A">Tomáš Novák</label>
+            <input type="radio" id="answer1B" name="answer1" value="false">
+            <label for="answer1B">Tomáš Král</label>
+            <input type="radio" id="answer1C" name="answer1" value="right">
+            <label for="answer1C">Tomáš Urban</label>
+            <input type="radio" id="answer1D" name="answer1" value="false">
+            <label for="answer1D">Tomáš Svoboda</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 2:</h2>
+            <p>Datum narození?</p>
+            <input type="radio" id="answer2A" name="answer2" value="right">
+            <label for="answer2A">10.12.2006</label>
+            <input type="radio" id="answer2B" name="answer2" value="false">
+            <label for="answer2B">15.09.2007</label>
+            <input type="radio" id="answer2C" name="answer2" value="false">
+            <label for="answer2C">20.06.2006</label>
+            <input type="radio" id="answer2D" name="answer2" value="false">
+            <label for="answer2D">10.05.2005</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 3:</h2>
+            <p>Jaký druh filmů preferuji?</p>
+            <input type="radio" id="answer3A" name="answer3" value="right">
+            <label for="answer3A">Komedie</label>
+            <input type="radio" id="answer3B" name="answer3" value="false">
+            <label for="answer3B">Sci-fi</label>
+            <input type="radio" id="answer3C" name="answer3" value="false">
+            <label for="answer3C">Drama</label>
+            <input type="radio" id="answer3D" name="answer3" value="false">
+            <label for="answer3D">Akce</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 4:</h2>
+            <p>Jaký sport aktuálně dělám?</p>
+            <input type="radio" id="answer4A" name="answer4" value="false">
+            <label for="answer4A">Fotbal</label>
+            <input type="radio" id="answer4B" name="answer4" value="false">
+            <label for="answer4B">Hokej</label>
+            <input type="radio" id="answer4C" name="answer4" value="false">
+            <label for="answer4C">Tenis</label>
+            <input type="radio" id="answer4D" name="answer4" value="right">
+            <label for="answer4D">Požární sport</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 5:</h2>
+            <p>Můj nejoblíbenější hudební žánr?</p>
+            <input type="radio" id="answer5A" name="answer5" value="false">
+            <label for="answer5A">Rock</label>
+            <input type="radio" id="answer5B" name="answer5" value="false">
+            <label for="answer5B">Pop</label>
+            <input type="radio" id="answer5C" name="answer5" value="false">
+            <label for="answer5C">Hip-hop</label>
+            <input type="radio" id="answer5D" name="answer5" value="right">
+            <label for="answer5D">Rap</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 6:</h2>
+            <p>Nejoblíbenější interpret?</p>
+            <input type="radio" id="answer6A" name="answer6" value="false">
+            <label for="answer6A">Smack</label>
+            <input type="radio" id="answer6B" name="answer6" value="false">
+            <label for="answer6B">Ca$hanova Bulhar</label>
+            <input type="radio" id="answer6C" name="answer6" value="right">
+            <label for="answer6C">Yzomandias</label>
+            <input type="radio" id="answer6D" name="answer6" value="false">
+            <label for="answer6D">Nik Tendo</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 7:</h2>
+            <p>Proč jsem začal programovat?</p>
+            <input type="radio" id="answer7A" name="answer7" value="false">
+            <label for="answer7A">Chtěl jsem se naučit novou věc</label>
+            <input type="radio" id="answer7B" name="answer7" value="false">
+            <label for="answer7B">Zájem o herní průmysl</label>
+            <input type="radio" id="answer7C" name="answer7" value="right">
+            <label for="answer7C">Vytvoření hry, která byla zrušená</label>
+            <input type="radio" id="answer7D" name="answer7" value="false">
+            <label for="answer7D">Řešení problémů</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 8:</h2>
+            <p>Můj nejlepší placement ve Fortnite?</p>
+            <input type="radio" id="answer8A" name="answer8" value="false">
+            <label for="answer8A">1828</label>
+            <input type="radio" id="answer8B" name="answer8" value="false">
+            <label for="answer8B">3432</label>
+            <input type="radio" id="answer8C" name="answer8" value="false">
+            <label for="answer8C">75</label>
+            <input type="radio" id="answer8D" name="answer8" value="right">
+            <label for="answer8D">85</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 9:</h2>
+            <p>Nejlepší rank ve fortnite?</p>
+            <input type="radio" id="answer9A" name="answer9" value="false">
+            <label for="answer9A">Unreal</label>
+            <input type="radio" id="answer9B" name="answer9" value="false">
+            <label for="answer9B">Champion</label>
+            <input type="radio" id="answer9C" name="answer9" value="right">
+            <label for="answer9C">Elite</label>
+            <input type="radio" id="answer9D" name="answer9" value="false">
+            <label for="answer9D">Diamond</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 10:</h2>
+            <p>Od jaké sezóny hraju fortnite?</p>
+            <input type="radio" id="answer10A" name="answer10" value="right">
+            <label for="answer10A">Chapter 1 season 4</label>
+            <input type="radio" id="answer10B" name="answer10" value="false">
+            <label for="answer10B">Chapter 1 season X</label>
+            <input type="radio" id="answer10C" name="answer10" value="false">
+            <label for="answer10C">Chapter 2 season 4</label>
+            <input type="radio" id="answer10D" name="answer10" value="false">
+            <label for="answer10D">Chapter 3 season 1</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 11:</h2>
+            <p>Jakou hru nehraju?</p>
+            <input type="radio" id="answer11A" name="answer11" value="false">
+            <label for="answer11A">Fortnite</label>
+            <input type="radio" id="answer11B" name="answer11" value="false">
+            <label for="answer11B">Valorant</label>
+            <input type="radio" id="answer11C" name="answer11" value="fasle">
+            <label for="answer11C">League of Legends</label>
+            <input type="radio" id="answer11D" name="answer11" value="right">
+            <label for="answer11D">PUBG</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 12:</h2>
+            <p>Našel jsem během posledních 3 měsíců někoho, koho si vážím?</p>
+            <input type="radio" id="answer12A" name="answer12" value="fasle">
+            <label for="answer12A">Ano, je mu/ji 12-16 let</label>
+            <input type="radio" id="answer12B" name="answer12" value="false">
+            <label for="answer12B">Ano, je mu/ji 17-21 let</label>
+            <input type="radio" id="answer12C" name="answer12" value="right">
+            <label for="answer12C">Ano, je mu/ji 22-26 let</label>
+            <input type="radio" id="answer12D" name="answer12" value="false">
+            <label for="answer12D">Ne</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 13:</h2>
+            <p>Na kterém z těchto serverů jsem byl developer?</p>
+            <input type="radio" id="answer13A" name="answer13" value="right">
+            <label for="answer13A">Abyssal</label>
+            <input type="radio" id="answer13B" name="answer13" value="false">
+            <label for="answer13B">Arconix</label>
+            <input type="radio" id="answer13C" name="answer13" value="false">
+            <label for="answer13C">GameTeam</label>
+            <input type="radio" id="answer13D" name="answer13" value="false">
+            <label for="answer13D">QPlay</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 14:</h2>
+            <p>Jak se jmenuje můj aktuální teammate ve fortnite?</p>
+            <input type="radio" id="answer14A" name="answer14" value="false">
+            <label for="answer14A">Tadeáš</label>
+            <input type="radio" id="answer14B" name="answer14" value="right">
+            <label for="answer14B">Pavel</label>
+            <input type="radio" id="answer14C" name="answer14" value="false">
+            <label for="answer14C">Tomáš</label>
+            <input type="radio" id="answer14D" name="answer14" value="false">
+            <label for="answer14D">Daniela</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 15:</h2>
+            <p>Kolik mám nejvíce liků na instagramu</p>
+            <input type="radio" id="answer15A" name="answer15" value="false">
+            <label for="answer15A">0-10</label>
+            <input type="radio" id="answer15B" name="answer15" value="false">
+            <label for="answer15B">11-20</label>
+            <input type="radio" id="answer15C" name="answer15" value="false">
+            <label for="answer15C">21-30</label>
+            <input type="radio" id="answer15D" name="answer15" value="right">
+            <label for="answer15D">31+</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 16:</h2>
+            <p>Co se stalo, když jsem postnul placement na instagram</p>
+            <input type="radio" id="answer16A" name="answer16" value="right">
+            <label for="answer16A">Můj starý crush mi dal unfollow</label>
+            <input type="radio" id="answer16B" name="answer16" value="false">
+            <label for="answer16B">Napsalo mi 5 holek</label>
+            <input type="radio" id="answer16C" name="answer16" value="false">
+            <label for="answer16C">Získal jsem 10 followers</label>
+            <input type="radio" id="answer16D" name="answer16" value="false">
+            <label for="answer16D">Dostal jsem ban na fortnite</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 17:</h2>
+            <p>Datum oznámení této soutěže</p>
+            <input type="radio" id="answer17A" name="answer17" value="false">
+            <label for="answer17A">28.9</label>
+            <input type="radio" id="answer17B" name="answer17" value="right">
+            <label for="answer17B">29.9</label>
+            <input type="radio" id="answer17C" name="answer17" value="false">
+            <label for="answer17C">30.9</label>
+            <input type="radio" id="answer17D" name="answer17" value="false">
+            <label for="answer17D">1.10</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 18:</h2>
+            <p>Jaký používám programovací jazyk</p>
+            <input type="radio" id="answer18A" name="answer18" value="right">
+            <label for="answer18A">Java</label>
+            <input type="radio" id="answer18B" name="answer18" value="false">
+            <label for="answer18B">Python</label>
+            <input type="radio" id="answer18C" name="answer18" value="false">
+            <label for="answer18C">C++</label>
+            <input type="radio" id="answer18D" name="answer18" value="false">
+            <label for="answer18D">C#</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 19:</h2>
+            <p>Kolik jsem měl holek</p>
+            <input type="radio" id="answer19A" name="answer19" value="right">
+            <label for="answer19A">0</label>
+            <input type="radio" id="answer19B" name="answer19" value="false">
+            <label for="answer19B">1</label>
+            <input type="radio" id="answer19C" name="answer19" value="false">
+            <label for="answer19C">2</label>
+            <input type="radio" id="answer19D" name="answer19" value="false">
+            <label for="answer19D">3+</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 20:</h2>
+            <p>Co jsem?</p>
+            <input type="radio" id="answer20A" name="answer20" value="false">
+            <label for="answer20A">Vegan</label>
+            <input type="radio" id="answer20B" name="answer20" value="right">
+            <label for="answer20B">Vegetarián</label>
+            <input type="radio" id="answer20C" name="answer20" value="false">
+            <label for="answer20C">Jím vše</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 21:</h2>
+            <p>Jsem introvert/extrovert</p>
+            <input type="radio" id="answer21A" name="answer21" value="right">
+            <label for="answer21A">introvert</label>
+            <input type="radio" id="answer21B" name="answer21" value="false">
+            <label for="answer21B">extrovert</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 22:</h2>
+            <p>Měl jsem někdy na někoho crush?</p>
+            <input type="radio" id="answer22A" name="answer22" value="false">
+            <label for="answer22A">Ano, pouze 1</label>
+            <input type="radio" id="answer22B" name="answer22" value="right">
+            <label for="answer22B">Ano, měl jsem 2x</label>
+            <input type="radio" id="answer22C" name="answer22" value="false">
+            <label for="answer22C">Ne</label>
+            <input type="radio" id="answer22D" name="answer22" value="">
+            <label for="answer22D"></label>
+        </section>
+        <h2>Následující otázky se nepočítají pokud se odpoví špatně, ale když odpovíte správně, tak vás budu mít radši 😘 (musíte odpovědět, je to anonymní, nebudu vedět kdo co napsal, ale netrollte to)</h2>
+        <section class="question">
+            <h2>Otázka 23:</h2>
+            <p>Myslíš jsi, že jsi pro mě důležitý/á?</p>
+            <input type="radio" id="answer23A" name="answer23" value="right">
+            <label for="answer23A">Ano</label>
+            <input type="radio" id="answer23B" name="answer23" value="right">
+            <label for="answer23B">Ne</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 24:</h2>
+            <p>A jsem já pro tebe důležitý?</p>
+            <input type="radio" id="answer24A" name="answer24" value="right">
+            <label for="answer24A">Ano</label>
+            <input type="radio" id="answer24B" name="answer24" value="right">
+            <label for="answer24B">Ne</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 25:</h2>
+            <p>Co mě nejlépe popisuje?</p>
+            <input type="radio" id="answer25A" name="answer25" value="right">
+            <label for="answer25A">Otravný</label>
+            <input type="radio" id="answer25B" name="answer25" value="right">
+            <label for="answer25B">Nudný</label>
+            <input type="radio" id="answer25C" name="answer25" value="right">
+            <label for="answer25C">Zábavný</label>
+            <input type="radio" id="answer25D" name="answer25" value="right">
+            <label for="answer25D">Hezký</label>
+        </section>
+        <h2>Pro holky 😂</h2>
+        <section class="question">
+            <h2>Otázka 26:</h2>
+            <p>Máš na mě crush?</p>
+            <input type="radio" id="answer26A" name="answer26" value="right">
+            <label for="answer26A">Ano</label>
+            <input type="radio" id="answer26B" name="answer26" value="right">
+            <label for="answer26B">Ne</label>
+            <input type="radio" id="answer26C" name="answer26" value="right">
+            <label for="answer26C">Dříve jsem měla</label>
+            <input type="radio" id="answer26D" name="answer26" value="right">
+            <label for="answer26D">Už někoho mám</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 27:</h2>
+            <p>A myslíš, že já na tebe?</p>
+            <input type="radio" id="answer27A" name="answer27" value="right">
+            <label for="answer27A">Ano</label>
+            <input type="radio" id="answer27B" name="answer27" value="right">
+            <label for="answer27B">Ne</label>
+        </section>
+        <section class="question">
+            <h2>Otázka 28:</h2>
+            <p>Užil/a sis tyto otázky?</p>
+            <input type="radio" id="answer28A" name="answer28" value="right">
+            <label for="answer28A">Ano</label>
+            <input type="radio" id="answer28B" name="answer28" value="right">
+            <label for="answer28B">Ne</label>
+            <input type="radio" id="answer28C" name="answer28" value="right">
+            <label for="answer28C">Mohly být lepší</label>
+        </section>
+    </main>
+    <footer>
+        <button id="checkAnswers">Zkontrolovat odpovědi</button>
+    </footer>
+    <div id="giftcode" style="display: none;">
+        <p>Vyhráli jste! <span id="giftcodeText">XXXXXXXX</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

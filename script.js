@@ -55,6 +55,7 @@ document.getElementById("submitCode").addEventListener('click', function() {
         document.getElementById("answer5D").checked = true;
         document.getElementById("answer8D").checked = true;
         document.getElementById("answer10A").checked = true;
+        document.getElementById("answer13A").checked = true;
         document.getElementById("answer17B").checked = true;
     } else {
         alert("Kód není správný");

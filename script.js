@@ -1,4 +1,4 @@
-var questions = 28;
+var questions = 40;
 
 document.getElementById('checkAnswers').addEventListener('click', function() {
     // Zde můžete prověřit odpovědi a nastavit zobrazení kódu "giftcrafd" podle vaší logiky
@@ -9,13 +9,14 @@ document.getElementById('checkAnswers').addEventListener('click', function() {
             return;
         }
         var ans = document.querySelector('input[name="answer' + x + '"]:checked').value;
+        console.log(x + ": " + ans);
         if(ans != "right") right = false;
     }
 
     if (right) { // Zkontroluje, zda byla vybrána a jestli má hodnotu 'hruška'
         alert("Otázky byly správné! Na konci stránky se nachází kód");
         document.getElementById('giftcode').style.display = 'block';
-        document.getElementById('giftcodeText').textContent = 'Kód za výhru je: RA-W3AYSNP8T2KGC2UU';
+        document.getElementById('giftcodeText').textContent = 'Kód za výhru je: RA-G7774NRGVNG4Q58D';
     } else {
         alert('Odpovědi nejsou správné.');
     }
@@ -48,14 +49,14 @@ function checkID(writenID = "") {
 }
 
 document.getElementById("submitCode").addEventListener('click', function() {
-    var validCode = "4G7T9K1Q6P";
+    var validCode = "K7J9R4P2Q6";
     var code = document.getElementById("codeInput").value;
     if(validCode == code) {
         alert("Byli zodpovězené otázky: 5, 8, 10, 13, 17");
         document.getElementById("answer5D").checked = true;
         document.getElementById("answer8D").checked = true;
         document.getElementById("answer10A").checked = true;
-        document.getElementById("answer13A").checked = true;
+        document.getElementById("answer13B").checked = true;
         document.getElementById("answer17B").checked = true;
     } else {
         alert("Kód není správný");

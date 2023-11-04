@@ -1,4 +1,4 @@
-var questions = 40;
+var questions = 37;
 
 document.getElementById('checkAnswers').addEventListener('click', function() {
     // Zde můžete prověřit odpovědi a nastavit zobrazení kódu "giftcrafd" podle vaší logiky
@@ -57,7 +57,7 @@ document.getElementById("submitCode").addEventListener('click', function() {
         document.getElementById("answer8D").checked = true;
         document.getElementById("answer10A").checked = true;
         document.getElementById("answer13B").checked = true;
-        document.getElementById("answer17B").checked = true;
+        document.getElementById("answer17A").checked = true;
     } else {
         alert("Kód není správný");
     }
@@ -84,6 +84,14 @@ function showNextAlert() {
 
     // Začít s prvním alertem
     showAlert(0);
+}
+
+function updateTextStatus(id) {
+    const el = document.getElementById("change");
+    if(id == 0) el.innerHTML = "Je 0-2/10, ale";
+    if(id == 1) el.innerHTML = "Je 3-5/10, ale";
+    if(id == 2) el.innerHTML = "Je 6-8/10, ale";
+    if(id == 3) el.innerHTML = "Je 9-10/10, ale";
 }
 
 // Volat funkci showNextAlert po načtení stránky

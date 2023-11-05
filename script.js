@@ -16,7 +16,7 @@ document.getElementById('checkAnswers').addEventListener('click', function() {
     if (right) { // Zkontroluje, zda byla vybrána a jestli má hodnotu 'hruška'
         alert("Otázky byly správné! Na konci stránky se nachází kód");
         document.getElementById('giftcode').style.display = 'block';
-        document.getElementById('giftcodeText').textContent = 'Kód za výhru je: RA-G7774NRGVNG4Q58D';
+        document.getElementById('giftcodeText').textContent = 'Kód za výhru je: RA-JE6CYJGJWPJ9DUXS';
     } else {
         alert('Odpovědi nejsou správné.');
     }
